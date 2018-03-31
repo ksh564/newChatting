@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="#000000"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+            <VideoView
+                android:layout_width="match_parent"
+                android:id="@+id/WatchVideo"
+                android:layout_gravity="center"
+                android:layout_height="250dp"
+                />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_weight="0.03"
+            android:orientation="horizontal"
+           >
+
+            <ImageButton
+                android:id="@+id/video_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginLeft="10dp"
+                android:background="#000000"
+                android:src="@drawable/file_down_icon"
+                android:text="Button"/>
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.25"
+                android:background="#000000"
+                android:src="@drawable/share_icon"
+                android:text="Button"/>
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#000000"
+                android:layout_weight="0.25"
+                android:src="@drawable/delete_icon"
+                android:text="Button"/>
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginLeft="10dp"
+                android:background="#000000"
+                android:src="@drawable/inform_icon"
+                android:text="Button"/>
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

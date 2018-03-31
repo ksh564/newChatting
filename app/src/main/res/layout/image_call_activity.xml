@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_height="400"
+        app:scale_base_width="200">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isCalledImage"
+            android:scaleType="center"
+            app:scale_left="50"
+            app:scale_top="40"
+            android:src="@drawable/android_logo"/>
+        <TextView
+            app:scale_top="150"
+            app:scale_left="50"
+            app:scale_height="50"
+            app:scale_width="100"
+            app:scale_textsize="20"
+            android:gravity="center"
+            android:id="@+id/isCalledNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="원빈"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isCalledConnectButton"
+            app:scale_top="220"
+            android:background="#00ff0000"
+            android:src="@mipmap/connect_call"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isCalledDisConnectButton"
+            app:scale_top="220"
+            app:scale_left="100"
+            android:background="#00ff0000"
+            android:src="@mipmap/disconnect_call"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</FrameLayout>

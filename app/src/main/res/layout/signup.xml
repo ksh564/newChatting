@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="30dp"
+            android:layout_marginTop="40sp"
+            android:gravity="center_horizontal"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="이메일:"
+                android:textSize="13sp"/>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+
+                android:textSize="13sp"
+                android:maxLength="20"
+
+                android:layout_marginLeft="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:id="@+id/UserEmail" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="닉네임:"
+                android:textSize="13sp"/>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:hint=""
+                android:layout_marginLeft="20dp"
+                android:maxLength="20"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:id="@+id/UserNickname" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="이름:"
+                android:textSize="13sp"/>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="20dp"
+                android:hint=""
+                android:maxLength="20"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:id="@+id/UserName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="비밀번호:"
+                android:textSize="13sp"/>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:password="true"
+
+
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:id="@+id/UserPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="비밀번호 확인:"
+                android:textSize="13sp"/>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:hint=""
+                android:password="true"
+                android:layout_marginLeft="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:id="@+id/UserPasswordAgain" />
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:text="Sign Up"
+            android:textSize="15sp"
+            android:onClick="onClick"
+            android:id="@+id/SU_SignupBtn" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

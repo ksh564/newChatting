@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="addon">
+    <item>파일전송</item>
+    <item>친구초대</item>
+</string-array>
+
+    <string-array name="friend_addon">
+        <item>영상통화</item>
+        <item>1:1채팅</item>
+        <item>프로필 보기</item>
+    </string-array>
+
+    <string-array name="option_addon">
+        <item>프로필 업로드</item>
+        <item>Canny필터 업로드</item>
+        <item>흑백필터 업로드</item>
+        <item>얼굴 사진 업로드</item>
+        <item>프로필 사진 보기</item>
+    </string-array>
+
+    <string-array name="videoResolutions">
+        <item>Default</item>
+        <item>4K (3840 x 2160)</item>
+        <item>Full HD (1920 x 1080)</item>
+        <item>HD (1280 x 720)</item>
+        <item>VGA (640 x 480)</item>
+        <item>QVGA (320 x 240)</item>
+    </string-array>
+
+    <string-array name="videoResolutionsValues">
+        <item>Default</item>
+        <item>3840 x 2160</item>
+        <item>1920 x 1080</item>
+        <item>1280 x 720</item>
+        <item>640 x 480</item>
+        <item>320 x 240</item>
+    </string-array>
+
+    <string-array name="cameraFps">
+        <item>Default</item>
+        <item>30 fps</item>
+        <item>15 fps</item>
+    </string-array>
+
+    <string-array name="startBitrate">
+        <item>Default</item>
+        <item>Manual</item>
+    </string-array>
+
+    <string-array name="videoCodecs">
+        <item>VP8</item>
+        <item>VP9</item>
+        <item>H264 Baseline</item>
+        <item>H264 High</item>
+    </string-array>
+
+    <string-array name="audioCodecs">
+        <item>OPUS</item>
+        <item>ISAC</item>
+    </string-array>
+
+    <string-array name="speakerphone">
+        <item>Auto (proximity sensor)</item>
+        <item>Enabled</item>
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="speakerphoneValues">
+        <item>auto</item>
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+
+    <string-array name="roomListContextMenu">
+        <item>Remove favorite</item>
+    </string-array>
+</resources>

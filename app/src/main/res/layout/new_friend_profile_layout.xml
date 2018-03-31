@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_height="20"
+        app:scale_height="70"
+        app:scale_width="300">
+
+        <ImageView
+            android:id="@+id/Profile_image"
+            app:scale_left="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android_logo"
+            app:scale_height="10"
+            app:scale_top="5"
+            app:scale_width="10"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:scale_height="20"
+            app:scale_left="20"
+            app:scale_top="5"
+            app:scale_width="50">
+
+            <TextView
+                android:id="@+id/User_NickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test1@naver.com"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp"
+            app:scale_height="20"
+            app:scale_left="40"
+            app:scale_top="5"
+            app:scale_width="50">
+
+            <TextView
+                android:id="@+id/User_Stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="chat"
+                android:textColor="#ff848484"/>
+        </LinearLayout>
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+
+</FrameLayout>

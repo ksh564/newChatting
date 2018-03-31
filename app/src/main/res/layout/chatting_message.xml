@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/full_content"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentImg"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/content"
+            android:layout_toStartOf="@+id/content">
+
+
+        <ImageView
+            android:id="@+id/uesrProfile"
+            android:layout_marginTop="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/android_logo"
+            android:layout_gravity="center_horizontal|top" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/readNum_me"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:text="1"/>
+
+
+        </FrameLayout>
+        <LinearLayout
+
+            android:id="@+id/content"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/txtNick"
+                android:layout_gravity="left"
+                android:text="김승훈"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:id="@+id/video_view"
+                   android:layout_height="wrap_content"/>
+                <ImageButton
+                    android:id="@+id/videoProgress"
+                    android:src="@drawable/play_button"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="true"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <LinearLayout
+
+                android:id="@+id/contentWithBackground"
+
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right"
+
+                android:background="@drawable/in_message_bg"
+
+                android:paddingLeft="10dp"
+
+                android:paddingBottom="10dp"
+
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/txtMessage"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@android:color/black"
+
+                    android:maxWidth="240dp" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/txtInfo"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="30sp"
+
+                android:layout_gravity="right"
+
+                android:textSize="12sp"
+
+                android:textColor="@android:color/darker_gray" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:id="@+id/readNum"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
